@@ -13,10 +13,10 @@
   gap: 7px;
   min-height: 36px;
   padding: 0 12px;
-  border: 1px solid #d9dfdc;
+  border: 1px solid #d5dce3;
   border-radius: 4px;
   background: #fff;
-  color: #36413d;
+  color: #354252;
   font: inherit;
   font-size: 0.9rem;
   cursor: pointer;
@@ -26,19 +26,19 @@
 .project-filter-count {
   align-self: center;
   margin-left: auto;
-  color: #667169;
+  color: #66717d;
   font-size: 0.84rem;
 }
 
 .project-filter button:hover,
 .article-tools button:hover {
-  border-color: #1f6a52;
-  color: #14513d;
+  border-color: #246bce;
+  color: #1858ae;
 }
 
 .project-filter .is-active {
-  border-color: #1f6a52;
-  background: #1f6a52;
+  border-color: #246bce;
+  background: #246bce;
   color: #fff;
 }
 
@@ -49,14 +49,14 @@
   right: 0;
   left: 0;
   height: 3px;
-  background: rgba(31, 106, 82, 0.08);
+  background: rgba(36, 107, 206, 0.08);
 }
 
 .reading-progress span {
   display: block;
   width: var(--reading-progress, 0%);
   height: 100%;
-  background: #1f6a52;
+  background: #246bce;
   transition: width 80ms linear;
 }
 
@@ -66,7 +66,7 @@
   gap: 8px;
   margin: 32px 0 0;
   padding-top: 20px;
-  border-top: 1px solid #e3e7e5;
+  border-top: 1px solid #e5e9ed;
 }
 
 @media (max-width: 640px) {
