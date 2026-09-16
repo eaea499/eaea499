@@ -43,7 +43,7 @@ export default function Home() {
 
       <section className="section site-wrap notes-section" id="notes" aria-labelledby="notes-title">
         <div className="section-heading"><div><p className="section-kicker">Notes</p><h2 id="notes-title">学习记录，正在写入</h2></div><Link className="text-link text-link-dark" href="/blog">进入博客 <ArrowUpRight size={17} /></Link></div>
-        <div className="notes-list"><article><span>01</span><div><p>从一块开发板开始，重新理解感知与连接</p><small>嵌入式 / 即将发布</small></div><ArrowUpRight size={20} /></article><article><span>02</span><div><p>把一个个人网站从域名部署到 HTTPS</p><small>Web / 即将发布</small></div><ArrowUpRight size={20} /></article></div>
+        <div className="notes-list"><article><span>01</span><div><p>从一块开发板开始，重新理解感知与连接</p><small>嵌入式 / 即将发布</small></div><ArrowUpRight size={20} /></article><Link href="/blog/from-domain-to-https"><span>02</span><div><p>从域名到 HTTPS：个人网站的第一条上线链路</p><small>Web / 2026.09.17</small></div><ArrowUpRight size={20} /></Link></div>
       </section>
     </main>
     <SiteFooter />
