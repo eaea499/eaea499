@@ -1,5 +1,6 @@
 import { ArrowLeft, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
+import { ArticleTools } from "@/components/article-tools";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
 const milestones = [
@@ -10,7 +11,7 @@ const milestones = [
 ];
 
 export default function FromDomainToHttpsPage() {
-  return <><SiteHeader /><main className="article-page">
+  return <><SiteHeader /><ArticleTools /><main className="article-page">
     <article className="article-wrap">
       <Link className="back-link" href="/blog"><ArrowLeft size={16} /> 返回博客</Link>
       <header className="article-header"><p className="section-kicker">Web / 2026.09.17</p><h1>从域名到 HTTPS：<br />个人网站的第一条上线链路</h1><p className="article-lead">这不是一份标准教程，而是 eaea499.cn 从一个想法变成可访问网站的真实记录。</p></header>

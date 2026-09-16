@@ -1,0 +1,86 @@
+.project-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 28px;
+}
+
+.project-filter button,
+.article-tools button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 36px;
+  padding: 0 12px;
+  border: 1px solid #d9dfdc;
+  border-radius: 4px;
+  background: #fff;
+  color: #36413d;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease;
+}
+
+.project-filter-count {
+  align-self: center;
+  margin-left: auto;
+  color: #667169;
+  font-size: 0.84rem;
+}
+
+.project-filter button:hover,
+.article-tools button:hover {
+  border-color: #1f6a52;
+  color: #14513d;
+}
+
+.project-filter .is-active {
+  border-color: #1f6a52;
+  background: #1f6a52;
+  color: #fff;
+}
+
+.reading-progress {
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 3px;
+  background: rgba(31, 106, 82, 0.08);
+}
+
+.reading-progress span {
+  display: block;
+  width: var(--reading-progress, 0%);
+  height: 100%;
+  background: #1f6a52;
+  transition: width 80ms linear;
+}
+
+.article-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 32px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid #e3e7e5;
+}
+
+@media (max-width: 640px) {
+  .project-filter {
+    margin-bottom: 22px;
+  }
+
+  .project-filter button,
+  .article-tools button {
+    flex: 1 1 auto;
+  }
+
+  .project-filter-count {
+    flex-basis: 100%;
+    margin: 2px 0 0;
+  }
+}
