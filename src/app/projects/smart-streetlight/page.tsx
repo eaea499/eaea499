@@ -23,7 +23,7 @@ const flow = [
 
 export default function SmartStreetlightPage() {
   return <>
-    <header className="site-header"><div className="site-wrap header-inner"><Link className="brand" href="/"><span />eaea499.cn</Link><nav aria-label="主导航"><Link href="/projects">项目</Link><Link href="/blog">博客</Link><Link href="/about">关于</Link></nav><Link className="header-action" href="/projects"><ArrowLeft size={16} />返回项目</Link></div></header>
+    <header className="site-header"><div className="site-wrap header-inner"><Link className="brand" href="/"><span />呃啊呃啊</Link><nav aria-label="主导航"><Link href="/projects">项目</Link><Link href="/blog">博客</Link><Link href="/about">关于</Link></nav><Link className="header-action" href="/projects"><ArrowLeft size={16} />返回项目</Link></div></header>
     <main className="case-page">
       <section className="case-hero"><div className="site-wrap case-hero-inner"><div><p className="eyebrow">PROJECT 01 / IOT SYSTEM</p><h1>智能路灯系统</h1><p className="case-lead">一个从传感器、设备控制到 Web 展示的物联网原型，尝试把“路灯什么时候该亮、应该多亮”变成一条可以观察、联调和验证的完整链路。</p><div className="case-actions"><a className="button button-primary" href="https://github.com/eaea499" target="_blank" rel="noreferrer">查看 GitHub <ArrowUpRight size={17} /></a><Link className="button button-secondary" href="/projects">返回项目列表</Link></div></div><dl className="case-meta"><div><dt>项目类型</dt><dd>课程设计 / 物联网实践</dd></div><div><dt>当前状态</dt><dd>双节点联网联调完成</dd></div><div><dt>我的角色</dt><dd>系统设计与全链路开发</dd></div></dl></div></section>
 

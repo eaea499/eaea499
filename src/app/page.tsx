@@ -23,7 +23,7 @@ export default function Home() {
           <div className="hero-content">
             <p className="eyebrow">PERSONAL SITE / 2026</p>
             <h1 id="hero-title">让设备、数据与<br />体验可靠协同。</h1>
-            <p className="hero-summary">我是黎俊杰，物联网工程本科生。这里沉淀真实项目、开发记录，以及从嵌入式走向 Web 的持续实践。</p>
+            <p className="hero-summary">我是杰子，物联网工程本科生。这里沉淀真实项目、开发记录，以及从嵌入式走向 Web 的持续实践。</p>
             <div className="hero-actions"><Link className="button button-primary" href="/projects">查看项目 <ArrowUpRight size={17} /></Link><Link className="button button-secondary" href="/about">了解更多</Link></div>
           </div>
           <div className="hero-photo" role="img" aria-label="电子电路板特写" />
