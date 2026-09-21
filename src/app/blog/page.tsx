@@ -4,7 +4,7 @@ import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
 const notes = [
   { category: "WEB", title: "从域名到 HTTPS：个人网站的第一条上线链路", description: "把域名、备案、服务器、证书和上线过程整理成一条真实记录。", href: "/blog/from-domain-to-https", status: "2026.09.17" },
-  { category: "IOT", title: "设备端、消息与页面：怎样看待一次物联网联调", description: "把感知、通信、控制拆开，再重新连成一条能观察的链路。" },
+  { category: "IOT", title: "设备端、消息与页面：怎样看待一次物联网联调", description: "把感知、通信、控制拆开，再重新连成一条能观察的链路。", href: "/blog/smart-streetlight-debugging", status: "2026.09.21" },
   { category: "CV", title: "从图像采集到检测结果：我在视觉实践中关注什么", description: "不止看模型输出，也看输入、环境和整个实现过程。" },
 ];
 
