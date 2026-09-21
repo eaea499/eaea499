@@ -9,7 +9,7 @@ const focusAreas = [
 ];
 
 const projects = [
-  { label: "IoT / Control", title: "智能路灯系统", text: "围绕环境感知、设备控制与平台展示展开的物联网实践，关注从数据采集到设备响应的完整闭环。", tags: ["STM32", "传感器", "MQTT"] },
+  { label: "IoT / Control", title: "智能路灯系统", text: "围绕环境感知、设备控制与平台展示展开的物联网实践，关注从数据采集到设备响应的完整闭环。", tags: ["ESP32-S3", "MQTT", "YOLOv8"], href: "/projects/smart-streetlight" },
   { label: "Vision / Edge", title: "ESP32-S3-CAM 视觉采集", text: "以摄像头模组为起点进行图像采集与传输，让轻量硬件也能成为感知系统的一部分。", tags: ["ESP32-S3-CAM", "HTTP", "图像采集"] },
   { label: "Python / CV", title: "图像处理实践", text: "用 Python、OpenCV 与 YOLOv8 完成图像处理和检测相关探索，记录每次联调里的具体问题。", tags: ["Python", "OpenCV", "YOLOv8"] },
 ];
@@ -39,7 +39,7 @@ export default function Home() {
 
       <section className="section site-wrap featured-work" id="projects" aria-labelledby="projects-title">
         <div className="section-heading"><div><p className="section-kicker">Selected work</p><h2 id="projects-title">代表项目</h2></div><Link className="text-link text-link-dark" href="/projects">查看全部 <ArrowUpRight size={17} /></Link></div>
-        <div className="project-list">{projects.map((project, index) => <article className="project-row" key={project.title}><span className="project-row-index">0{index + 1}</span><div><p className="detail-kind">{project.label}</p><h3>{project.title}</h3><p>{project.text}</p></div><ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul><ArrowUpRight className="project-row-arrow" size={20} /></article>)}</div>
+        <div className="project-list">{projects.map((project, index) => <Link className="project-row" href={project.href ?? "/projects"} key={project.title}><span className="project-row-index">0{index + 1}</span><div><p className="detail-kind">{project.label}</p><h3>{project.title}</h3><p>{project.text}</p></div><ul className="tag-list">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul><ArrowUpRight className="project-row-arrow" size={20} /></Link>)}</div>
       </section>
 
       <section className="section site-wrap notes-section" id="notes" aria-labelledby="notes-title">

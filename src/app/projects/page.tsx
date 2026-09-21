@@ -4,7 +4,7 @@ import { ProjectBrowser } from "@/components/project-browser";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
 const projects = [
-  { number: "01", title: "智能路灯系统", kind: "物联网系统实践", summary: "从环境数据采集开始，尝试连接设备控制、消息通信和数据展示，让路灯场景形成可观察、可联调的闭环。", parts: ["STM32 基础开发", "传感器数据采集", "设备控制与通信"], stack: ["STM32", "传感器", "MQTT / HTTP"], group: "iot" as const },
+  { number: "01", title: "智能路灯系统", kind: "物联网系统实践", summary: "从环境数据采集开始，尝试连接设备控制、消息通信和数据展示，让路灯场景形成可观察、可联调的闭环。", parts: ["ESP32-S3-CAM 节点", "传感器数据采集", "设备控制与通信"], stack: ["ESP32-S3", "MQTT", "HTTP"], group: "iot" as const, href: "/projects/smart-streetlight" },
   { number: "02", title: "ESP32-S3-CAM 视觉采集", kind: "边缘感知探索", summary: "围绕摄像头开发板进行图像采集与传输探索，理解小型设备在感知链路中的职责和约束。", parts: ["摄像头数据采集", "网络传输", "设备端联调"], stack: ["ESP32-S3-CAM", "HTTP", "图像采集"], group: "vision" as const },
   { number: "03", title: "Python 图像处理实践", kind: "计算机视觉学习", summary: "使用 Python、OpenCV 与 YOLOv8 进行图像处理和检测相关练习，把模型输出放回具体任务中理解。", parts: ["图像预处理", "目标检测尝试", "结果展示界面"], stack: ["Python", "OpenCV", "YOLOv8", "PyQt5"], group: "vision" as const },
 ];
