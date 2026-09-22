@@ -17,6 +17,7 @@
 /.next/
 /.next-user-data/
 /out/
+/release/
 
 # production
 /build
@@ -40,3 +41,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# local source asset copied outside public/
+/备案图标.png

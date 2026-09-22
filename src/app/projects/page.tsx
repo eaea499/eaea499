@@ -4,9 +4,9 @@ import { ProjectBrowser } from "@/components/project-browser";
 import { SiteFooter, SiteHeader } from "@/components/site-chrome";
 
 const projects = [
-  { number: "01", title: "智能路灯系统", kind: "物联网系统实践", summary: "从环境数据采集开始，尝试连接设备控制、消息通信和数据展示，让路灯场景形成可观察、可联调的闭环。", parts: ["ESP32-S3-CAM 节点", "传感器数据采集", "设备控制与通信"], stack: ["ESP32-S3", "MQTT", "HTTP"], group: "iot" as const, href: "/projects/smart-streetlight" },
-  { number: "02", title: "ESP32-S3-CAM 视觉采集", kind: "边缘感知探索", summary: "围绕摄像头开发板进行图像采集与传输探索，理解小型设备在感知链路中的职责和约束。", parts: ["摄像头数据采集", "网络传输", "设备端联调"], stack: ["ESP32-S3-CAM", "HTTP", "图像采集"], group: "vision" as const },
-  { number: "03", title: "Python 图像处理实践", kind: "计算机视觉学习", summary: "使用 Python、OpenCV 与 YOLOv8 进行图像处理和检测相关练习，把模型输出放回具体任务中理解。", parts: ["图像预处理", "目标检测尝试", "结果展示界面"], stack: ["Python", "OpenCV", "YOLOv8", "PyQt5"], group: "vision" as const },
+  { number: "01", title: "智能路灯系统", kind: "物联网系统实践", summary: "从环境数据采集开始，尝试连接设备控制、消息通信和数据展示，让路灯场景形成可观察、可联调的闭环。", parts: ["ESP32-S3-CAM 节点", "传感器数据采集", "设备控制与通信"], stack: ["ESP32-S3", "MQTT", "HTTP"], href: "/projects/smart-streetlight" },
+  { number: "02", title: "智慧校园证件照标准化预处理系统", kind: "计算机视觉应用", summary: "面向校园证件照制作场景的桌面端工具，将人脸检测、尺寸标准化、背景替换和图像增强串成一套可操作的处理流程。", parts: ["人脸检测与智能裁剪", "蓝白红背景替换", "批量处理与结果导出"], stack: ["Python", "OpenCV", "PyQt5", "YOLOv8"], href: "/projects/id-photo-processor" },
+  { number: "03", title: "STM32 硬件编程综合实训", kind: "嵌入式系统实践", summary: "围绕 STM32F103C8 开发板完成多组外设驱动与联调练习，从 GPIO 基础控制延伸到传感器、显示、通信和灯带效果。", parts: ["外设驱动与模块联调", "传感器与 OLED 显示", "串口中断与 PWM 控制"], stack: ["STM32F103C8", "C", "HAL", "Keil"], href: "/projects/stm32-training" },
 ];
 
 export default function ProjectsPage() {
