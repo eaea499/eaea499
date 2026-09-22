@@ -10,8 +10,8 @@ const focusAreas = [
 
 const projects = [
   { label: "IoT / Control", title: "智能路灯系统", text: "围绕环境感知、设备控制与平台展示展开的物联网实践，关注从数据采集到设备响应的完整闭环。", tags: ["ESP32-S3", "MQTT", "YOLOv8"], href: "/projects/smart-streetlight" },
-  { label: "Vision / Edge", title: "ESP32-S3-CAM 视觉采集", text: "以摄像头模组为起点进行图像采集与传输，让轻量硬件也能成为感知系统的一部分。", tags: ["ESP32-S3-CAM", "HTTP", "图像采集"] },
-  { label: "Python / CV", title: "图像处理实践", text: "用 Python、OpenCV 与 YOLOv8 完成图像处理和检测相关探索，记录每次联调里的具体问题。", tags: ["Python", "OpenCV", "YOLOv8"] },
+  { label: "Vision / Desktop", title: "智慧校园证件照标准化预处理系统", text: "面向校园证件照制作场景的桌面端视觉工具，将检测、裁剪、背景替换和图像增强组织成清晰流程。", tags: ["Python", "OpenCV", "PyQt5"], href: "/projects/id-photo-processor" },
+  { label: "Embedded / C", title: "STM32 硬件编程综合实训", text: "围绕 STM32F103C8 完成多组外设驱动与硬件联调，从 GPIO 基础控制延伸到传感器、显示和通信。", tags: ["STM32", "C", "HAL"], href: "/projects/stm32-training" },
 ];
 
 export default function Home() {
@@ -43,8 +43,8 @@ export default function Home() {
       </section>
 
       <section className="section site-wrap notes-section" id="notes" aria-labelledby="notes-title">
-        <div className="section-heading"><div><p className="section-kicker">Notes</p><h2 id="notes-title">学习记录，正在写入</h2></div><Link className="text-link text-link-dark" href="/blog">进入博客 <ArrowUpRight size={17} /></Link></div>
-        <div className="notes-list"><article><span>01</span><div><p>从一块开发板开始，重新理解感知与连接</p><small>嵌入式 / 即将发布</small></div><ArrowUpRight size={20} /></article><Link href="/blog/from-domain-to-https"><span>02</span><div><p>从域名到 HTTPS：个人网站的第一条上线链路</p><small>Web / 2026.09.17</small></div><ArrowUpRight size={20} /></Link></div>
+        <div className="section-heading"><div><p className="section-kicker">Notes</p><h2 id="notes-title">学习记录</h2></div><Link className="text-link text-link-dark" href="/blog">进入博客 <ArrowUpRight size={17} /></Link></div>
+        <div className="notes-list"><Link href="/blog/smart-streetlight-debugging"><span>01</span><div><p>设备端、消息与页面：怎样看待一次物联网联调</p><small>IoT / 2026.09.21</small></div><ArrowUpRight size={20} /></Link><Link href="/blog/from-domain-to-https"><span>02</span><div><p>从域名到 HTTPS：个人网站的第一条上线链路</p><small>Web / 2026.09.17</small></div><ArrowUpRight size={20} /></Link></div>
       </section>
     </main>
     <SiteFooter />
