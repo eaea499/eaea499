@@ -25,7 +25,7 @@ export default function SmartStreetlightPage() {
   return <>
     <header className="site-header"><div className="site-wrap header-inner"><Link className="brand" href="/"><span />呃啊呃啊</Link><nav aria-label="主导航"><Link href="/projects">项目</Link><Link href="/blog">博客</Link><Link href="/about">关于</Link></nav><Link className="header-action" href="/projects"><ArrowLeft size={16} />返回项目</Link></div></header>
     <main className="case-page">
-      <section className="case-hero"><div className="site-wrap case-hero-inner"><div><p className="eyebrow">PROJECT 01 / IOT SYSTEM</p><h1>智能路灯系统</h1><p className="case-lead">一个从传感器、设备控制到 Web 展示的物联网原型，尝试把“路灯什么时候该亮、应该多亮”变成一条可以观察、联调和验证的完整链路。</p><div className="case-actions"><a className="button button-primary" href="https://github.com/eaea499" target="_blank" rel="noreferrer">查看 GitHub <ArrowUpRight size={17} /></a><Link className="button button-secondary" href="/projects">返回项目列表</Link></div></div><dl className="case-meta"><div><dt>项目类型</dt><dd>课程设计 / 物联网实践</dd></div><div><dt>当前状态</dt><dd>双节点联网联调完成</dd></div><div><dt>我的角色</dt><dd>系统设计与全链路开发</dd></div></dl></div></section>
+      <section className="case-hero"><div className="site-wrap case-hero-inner"><div><p className="eyebrow">PROJECT 01 / IOT SYSTEM</p><h1>智能路灯系统</h1><p className="case-lead">一个从传感器、设备控制到 Web 展示的物联网原型，尝试把“路灯什么时候该亮、应该多亮”变成一条可以观察、联调和验证的完整链路。</p><div className="case-actions"><a className="button button-primary" href="https://github.com/eaea499/smart-streetlight" target="_blank" rel="noreferrer">查看 GitHub <ArrowUpRight size={17} /></a><Link className="button button-secondary" href="/projects">返回项目列表</Link></div></div><dl className="case-meta"><div><dt>项目类型</dt><dd>课程设计 / 物联网实践</dd></div><div><dt>当前状态</dt><dd>双节点联网联调完成</dd></div><div><dt>我的角色</dt><dd>系统设计与全链路开发</dd></div></dl></div></section>
 
       <section className="case-intro"><div className="site-wrap case-intro-grid"><p className="section-kicker">Overview</p><p>项目围绕两个 ESP32-S3-CAM 路灯节点展开。设备采集光照、电流和图像信息，消息平台负责传输，后端和 Web/PWA 负责状态展示与控制，最终形成“感知 - 判断 - 执行 - 反馈”的闭环。</p></div></section>
 
@@ -41,7 +41,7 @@ export default function SmartStreetlightPage() {
 
       <section className="case-section site-wrap"><div className="section-heading"><div><p className="section-kicker">Technology</p><h2>技术栈</h2></div><p>选择每项技术，是为了匹配它在链路中的具体职责。</p></div><div className="case-tech-list">{technologies.map((technology) => <span key={technology}>{technology}</span>)}</div><div className="case-boundary"><p className="section-kicker">Current boundary</p><p>目前是局域网内可运行的原型系统，后端状态保存在内存中。公网部署、账号鉴权、历史数据持久化和正式生产安全策略仍属于后续工作。</p></div></section>
 
-      <section className="site-wrap case-end"><Link className="back-link" href="/projects"><ArrowLeft size={16} />返回全部项目</Link><a className="text-link" href="https://github.com/eaea499" target="_blank" rel="noreferrer">访问 GitHub <GitBranch size={17} /></a></section>
+      <section className="site-wrap case-end"><Link className="back-link" href="/projects"><ArrowLeft size={16} />返回全部项目</Link><a className="text-link" href="https://github.com/eaea499/smart-streetlight" target="_blank" rel="noreferrer">访问 GitHub <GitBranch size={17} /></a></section>
     </main>
   </>;
 }
