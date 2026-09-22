@@ -43,6 +43,17 @@ sudo nginx -t
 sudo systemctl reload nginx
 ```
 
+## Nginx 安全响应头
+
+建议把 `deploy/nginx-security-headers.conf` 中的四行配置加入同一个 HTTPS `server` 块，并执行：
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
+这些配置用于限制 MIME 嗅探、跨站来源信息、浏览器设备权限和第三方嵌入，不会改变页面内容。
+
 ## 说明
 
 项目不提交 `.env`、私钥、证书或其他敏感配置。网站内容会随着项目和学习记录持续更新。
