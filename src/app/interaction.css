@@ -39,15 +39,25 @@
 }
 
 .article-tools {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: 40;
   display: flex;
-  flex-wrap: wrap;
   gap: 8px;
-  margin: 32px 0 0;
-  padding-top: 20px;
-  border-top: 1px solid #e5e9ed;
+  padding: 8px;
+  border: 1px solid rgba(213, 220, 227, .92);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 8px 24px rgba(24, 34, 45, .12);
 }
 
 @media (max-width: 640px) {
+  .article-tools {
+    right: 16px;
+    bottom: 16px;
+  }
+
   .article-tools button {
     flex: 1 1 auto;
   }

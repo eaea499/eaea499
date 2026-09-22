@@ -34,6 +34,15 @@ npm run build
 npm run start
 ```
 
+## Nginx 404
+
+静态导出会生成 `out/404.html`。如果 Nginx 仍显示默认的 `404 Not Found`，请把 `deploy/nginx-404-snippet.conf` 中的配置加入现有 HTTPS server 块，然后执行：
+
+```bash
+sudo nginx -t
+sudo systemctl reload nginx
+```
+
 ## 说明
 
 项目不提交 `.env`、私钥、证书或其他敏感配置。网站内容会随着项目和学习记录持续更新。
